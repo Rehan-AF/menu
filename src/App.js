@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
+import Button from "./Header";
+import Lunch from "./map/map";
+import menu from "./data";
 
 function App() {
+  // const [item, setItem] = useState(menu);
+  const [selectedCategory, setSelectedCategory] = useState("all");
+  console.log(selectedCategory);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Button
+        // item={item}
+        // setItem={setItem}
+        setSelectedCategory={setSelectedCategory}
+      />
+      <hr />
+      <div className="shower">
+        <Lunch selectedCategory={selectedCategory} />
+      </div>
+    </>
   );
 }
 

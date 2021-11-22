@@ -1,0 +1,32 @@
+.container {
+  /* height: 300px; */
+  /* width: 500px; */
+  /* border: 1px solid black; */
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+}
+.container img {
+  height: 150px;
+  width: 225px;
+  border: 0.25rem solid #c59d5f;
+  border-radius: 5px;
+}
+.forprice {
+  margin-left: 10px;
+}
+.inner {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px dotted #617d98;
+}
+.inner h4 {
+  margin: 0px;
+  margin-bottom: 0.5rem;
+}
+.price {
+  color: #c59d5f;
+}
+.description {
+  color: #226391;
+}
